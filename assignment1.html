@@ -1,0 +1,21 @@
+<html>
+  <head>
+      <title>Assignment-1</title>
+  </head>
+
+  <body>
+    <h4>Tripple Add Assignment</h4>
+    <p>Addition is: <span id="addvalue"></span></p>
+    <script>
+        function trippleadd(n1) {
+          return function (n2) {
+            return function (n3) {
+              return n1 + n2 + n3
+            }
+          }
+        }
+        document.getElementById("addvalue").innerHTML = trippleadd(10)(20)(30); 
+      </script>
+  </body>
+
+</html>
